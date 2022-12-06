@@ -35,7 +35,7 @@ public class ValidateAdvice {
 	@Autowired
 	ApplicationService applicationService;
 
-	@Around("@annotation(com.hidubai.annotations.Validate)")
+	@Around("@annotation(com.somnathshirkule.mongoassessment.annotations.Validate)")
 	public Object validate(ProceedingJoinPoint joinPoint) throws Throwable {
 		String formName = null;
 		Validate validateAnnotation = null;
