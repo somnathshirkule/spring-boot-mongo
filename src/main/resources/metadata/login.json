@@ -1,0 +1,18 @@
+{
+  "login": {
+    "email": {
+      "MANDATORY": "Y",
+      "REGEX": "[a-z0-9]+@[a-z]+%5C.[a-z]{2,3}",
+      "ENABLED": "Y",
+      "MIN_LENGTH":"3",
+      "MAX_LENGTH":"20"
+    },
+    "password": {
+      "MANDATORY": "Y",
+      "REGEX": "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$",
+      "ENABLED": "Y",
+      "MIN_LENGTH":"3",
+      "MAX_LENGTH":"20"
+    }
+  }
+}
