@@ -62,7 +62,7 @@ public class ApplicationService {
 	}
 	
 	public void addData(String carMan) {
-		carsRepository.save(new Car(carMan,"fortuner","ford","6"));
+		carsRepository.save(new Car("fortuner","ford","6"));
 		//return "data";
 	}
 }
