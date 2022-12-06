@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,5 +38,17 @@ public class ApplicationController {
 			log.debug("exited from getMetadata");
 		}
 		return new ResponseEntity<>(responseNode,HttpStatus.OK);
+	}
+	
+	@GetMapping("/cars")
+	public ResponseEntity<String> getData(){
+		String data = applicationService.getData();
+		return new ResponseEntity<>(data,HttpStatus.OK);
+	}
+	
+	@PostMapping("/cars/{carManf}")
+	public ResponseEntity<String> addData(@PathVariable("carManf") String carMan){
+		applicationService.addData(carMan);
+		return new ResponseEntity<>("OK",HttpStatus.OK);
 	}
 }
