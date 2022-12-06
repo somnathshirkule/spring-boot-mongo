@@ -1,4 +1,4 @@
-package com.hidubai.advice;
+package com.somnathshirkule.mongoassessment.advice;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -19,9 +19,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.hidubai.annotations.Validate;
-import com.hidubai.exceptions.ValidationException;
-import com.hidubai.service.ApplicationService;
+import com.somnathshirkule.mongoassessment.annotations.Validate;
+import com.somnathshirkule.mongoassessment.exceptions.ValidationException;
+import com.somnathshirkule.mongoassessment.service.ApplicationService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

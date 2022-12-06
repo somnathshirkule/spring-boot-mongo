@@ -1,4 +1,4 @@
-package com.hidubai.service;
+package com.somnathshirkule.mongoassessment.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,9 +10,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.hidubai.utility.Constants;
-import com.hidubai.utility.LocalStorage;
-import com.hidubai.utility.Utility;
+import com.somnathshirkule.mongoassessment.utility.Constants;
+import com.somnathshirkule.mongoassessment.utility.LocalStorage;
+import com.somnathshirkule.mongoassessment.utility.Utility;
 
 import lombok.extern.slf4j.Slf4j;
 

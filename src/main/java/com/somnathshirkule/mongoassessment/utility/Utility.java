@@ -1,4 +1,4 @@
-package com.hidubai.utility;
+package com.somnathshirkule.mongoassessment.utility;
 
 import java.io.BufferedReader;
 import java.io.File;

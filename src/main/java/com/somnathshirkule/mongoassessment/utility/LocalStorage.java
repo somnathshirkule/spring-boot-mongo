@@ -1,11 +1,11 @@
-package com.hidubai.utility;
+package com.somnathshirkule.mongoassessment.utility;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.hidubai.models.User;
+import com.somnathshirkule.mongoassessment.models.User;
 
 @Component
 public class LocalStorage {

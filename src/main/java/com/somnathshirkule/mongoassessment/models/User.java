@@ -1,4 +1,4 @@
-package com.hidubai.models;
+package com.somnathshirkule.mongoassessment.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

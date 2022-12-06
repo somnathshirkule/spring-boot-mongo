@@ -1,12 +1,12 @@
-package com.hidubai.exceptions;
+package com.somnathshirkule.mongoassessment.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.hidubai.utility.Constants;
-import com.hidubai.utility.Utility;
+import com.somnathshirkule.mongoassessment.utility.Constants;
+import com.somnathshirkule.mongoassessment.utility.Utility;
 
 import lombok.extern.slf4j.Slf4j;
 

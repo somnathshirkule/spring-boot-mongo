@@ -1,4 +1,4 @@
-package com.hidubai.exceptions;
+package com.somnathshirkule.mongoassessment.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

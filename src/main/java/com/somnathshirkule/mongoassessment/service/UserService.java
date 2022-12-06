@@ -1,15 +1,15 @@
-package com.hidubai.service;
+package com.somnathshirkule.mongoassessment.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.hidubai.exceptions.CustomeException;
-import com.hidubai.exceptions.UnauthorizedException;
-import com.hidubai.models.User;
-import com.hidubai.utility.Constants;
-import com.hidubai.utility.LocalStorage;
-import com.hidubai.utility.Utility;
+import com.somnathshirkule.mongoassessment.exceptions.CustomeException;
+import com.somnathshirkule.mongoassessment.exceptions.UnauthorizedException;
+import com.somnathshirkule.mongoassessment.models.User;
+import com.somnathshirkule.mongoassessment.utility.Constants;
+import com.somnathshirkule.mongoassessment.utility.LocalStorage;
+import com.somnathshirkule.mongoassessment.utility.Utility;
 
 import lombok.extern.slf4j.Slf4j;
 

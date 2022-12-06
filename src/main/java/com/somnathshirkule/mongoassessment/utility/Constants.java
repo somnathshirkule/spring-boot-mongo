@@ -1,4 +1,4 @@
-package com.hidubai.utility;
+package com.somnathshirkule.mongoassessment.utility;
 
 public class Constants {
 	public final static String STATUS = "Status";

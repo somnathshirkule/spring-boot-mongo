@@ -1,4 +1,4 @@
-package com.hidubai.controller;
+package com.somnathshirkule.mongoassessment.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.hidubai.annotations.Validate;
-import com.hidubai.service.UserService;
+import com.somnathshirkule.mongoassessment.annotations.Validate;
+import com.somnathshirkule.mongoassessment.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 
