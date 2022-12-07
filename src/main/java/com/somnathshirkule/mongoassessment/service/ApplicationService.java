@@ -10,8 +10,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.somnathshirkule.mongoassessment.models.Car;
-import com.somnathshirkule.mongoassessment.repositories.CarsRepository;
 import com.somnathshirkule.mongoassessment.utility.Constants;
 import com.somnathshirkule.mongoassessment.utility.LocalStorage;
 import com.somnathshirkule.mongoassessment.utility.Utility;
@@ -24,9 +22,6 @@ public class ApplicationService {
 
 	@Autowired
 	LocalStorage storage;
-	
-	@Autowired
-	CarsRepository carsRepository;
 	
 	/***
 	 * This methdod is used to fetch the forms metadata.
@@ -54,15 +49,5 @@ public class ApplicationService {
 			log.debug("exited from getMetadata");
 		}
 		return Utility.createSuccessResponseWithData(Utility.convertStringToJson(metadataList.toString()), Constants.SUCCESS);
-	}
-	
-	public String getData() {
-		return carsRepository.findAll().toString();
-		//return "data";
-	}
-	
-	public void addData(String carMan) {
-		carsRepository.save(new Car("fortuner","ford","6"));
-		//return "data";
 	}
 }

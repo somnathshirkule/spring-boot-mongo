@@ -39,16 +39,4 @@ public class ApplicationController {
 		}
 		return new ResponseEntity<>(responseNode,HttpStatus.OK);
 	}
-	
-	@GetMapping("/cars")
-	public ResponseEntity<String> getData(){
-		String data = applicationService.getData();
-		return new ResponseEntity<>(data,HttpStatus.OK);
-	}
-	
-	@PostMapping("/cars/{carManf}")
-	public ResponseEntity<String> addData(@PathVariable("carManf") String carMan){
-		applicationService.addData(carMan);
-		return new ResponseEntity<>("OK",HttpStatus.OK);
-	}
 }

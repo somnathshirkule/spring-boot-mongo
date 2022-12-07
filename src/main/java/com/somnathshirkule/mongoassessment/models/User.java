@@ -1,5 +1,8 @@
 package com.somnathshirkule.mongoassessment.models;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
@@ -14,7 +17,10 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Document("mst_users")
 public class User {
+	@Id
+	private String id;
 	private String firstName;
 	private String lastName;
 	private String email;
