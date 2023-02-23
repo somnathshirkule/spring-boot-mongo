@@ -38,7 +38,7 @@ public class UserController {
         }
         return new ResponseEntity<>(responseNode, HttpStatus.OK);
     }
-	
+
     /***
      * This API used for user login.
      *
